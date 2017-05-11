@@ -7,8 +7,11 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Sova Mail</title>
 
-    <!-- Bootstrap -->
+    <!-- Style -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,800" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,14 +21,180 @@
     <![endif]-->
 </head>
 <body>
-
-<section>
-    
+<main class="scrollme">
+    <nav>
+        <div class="container">
+            <div class="col-xs-10">
+                <img src="img/logo.png" class="logo"/>
+            </div>
+            <div id="nav" class="col-xs-90">
+                <ul>
+                    <li><a href="#">CONTACT</a> </li>
+                    <li class="selected"><a href="#">HOME</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="animateme animate-line"
+             data-when="enter"
+             data-from="0"
+             data-to="1"
+             data-opacity="1"
+             data-scaley="56"
+             data-translatey="28"
+             data-easing="easeinout"
+             style="top: 200px;"></div>
+        <div class="animateme square-green"class="animateme"
+             data-when="enter"
+             data-from="0"
+             data-to="1"
+             data-opacity="1"
+             data-translatey="56"
+             data-easing="easeinout"
+             style="top: 200px;"></div>
+        <div id="main-text" class="row">
+            <div class="col-sm-90">
+                <h1><span class="text-green">SOVA</span> MAIL</h1>
+                <h2>Do you believe email clients are boring?</h2>
+                <p>I send emails every day, but the process brings me little enjoyment. I communicate important
+                    information on a daily basis, but it all looks so rigid, monotone and tasteless
+                    (at least to me). The Sova Mail App will be my attempt to add a new twist to emailing!
+                    Coming soon after the launch of the <span class="text-green">Winkle Writing App</span></p>
+                <p>With the recent surge of popularity of chat-like messenger clients, email has lost its
+                    domain as the number one method of personal communication. Email remains reserved for
+                    more formal inquiries or file sending. Sova Mail wants to combine a chat-like user
+                    interface and traditional emailing into a solution that makes emailing enjoyable once
+                    again. The Sova Mail app is not a revolutionary application, but aims to combine
+                    traditional and modern aspects users expect in an email client. Sova Mail wants you
+                    to enjoy emailing!!</p>
+                <button id="sign-up">SIGN UP FOR THE BETA LAUNCH</button>
+            </div>
+        </div>
+    </div>
+</main>
+<section id="features">
+    <div class="container">
+        <div class="row">
+            <span class="shadow-text">FEATURES</span>
+            <div class="col-xs-100 text-center">
+                <h1>
+                    FEATURES
+                </h1>
+            </div>
+            <div class="col-sm-35">
+                <ul>
+                    <li>IMAP/POP3 Support</li>
+                    <li>Multiple Email Accounts</li>
+                    <li>Built-in Reminders</li>
+                    <li>Favorites</li>
+                    <li>Automatic Draft Saving</li>
+                    <li>Full-Featured Text Editor (Plus HTML)</li>
+                    <li>File Manager</li>
+                    <li>Gallery Preview</li>
+                    <li>Tabbed Email View/Compose</li>
+                    <li>Live Search</li>
+                    <li>Custom Backgrounds</li>
+                    <li>Full-Screen View</li>
+                    <li>Windows & Mac Version</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </section>
+<section id="details">
+    <div class="container">
+        <div class="row">
+            <span class="shadow-text shadow-dark">DETAILS</span>
+            <div class="col-xs-100 text-center">
+                <h1 class="header-dark">
+                    DETAILS
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div class="details-item">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-57">
+                    <img id="details-img-ui" class="img-responsive img-shadow" src="img/details/ui.jpg">
+                </div>
+                <div class="col-sm-offset-3 col-sm-40">
+                    <img id="details-img-notification" class="img-responsive" src="img/details/notification.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="details-item">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-40">
+                    <img id="details-img-filemanager" class="img-responsive" src="img/details/filemanager.png">
+                </div>
+                <div class="col-sm-57">
+                    <img id="details-img-ui-fm" class="img-responsive img-shadow" src="img/details/ui-fm.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="details-item">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-57">
+                    <img id="details-img-ui-email" class="img-responsive img-shadow" src="img/details/ui-email.jpg">
+                </div>
+                <div class="col-sm-offset-3 col-sm-40">
+                    <img id="details-img-email" class="img-responsive" src="img/details/email.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="gallery">
+    <div id="gallery-header">
+        <div class="container">
+            <div class="row">
+                <span class="shadow-text shadow-dark">GALLERY</span>
+                <div class="col-xs-100 text-center">
+                    <h1 class="header-dark">
+                        GALLERY
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="gallery-body">
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    </div>
+</section>
+<footer>
+    <div id="greyline" class="container text-center">
+        <div class="row">
+            <p>
+                Copyright 2017 | All Rights Reserved | Created by ©Ivan Samokish | Terms and Conditions
+            </p>
+        </div>
+    </div>
+    <div id="footer-line">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-35">
+                    <p>
+                        <span class="text-green">SIGN UP</span> FOR THE BETA LAUNCH!
+                    </p>
+                </div>
+                <form>
+                    <div class="col-sm-40"><input type="text" placeholder="Your email address..."></div>
+                    <div class="col-sm-25"><input type="submit" value="SUBSCRIBE"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.scrollme.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,211 @@
+/*
+Sections, divs, blocks
+*/
+/*Main section*/
+main {
+    height: 800px;
+    background: url("../img/background-main.jpg") center;
+    color: #ffffff;
+}
+nav ul li {
+    display: block;
+    position: relative;
+    float: right;
+}
+nav img.logo {
+    position: absolute;
+}
+#main-text {
+    margin-left: 40px;
+}
+
+/*Features section*/
+#features {
+    height: 845px;
+    background: #525955 url("../img/features-display.png") 75% 70% no-repeat;
+}
+#features ul {
+    font-size: 16pt;
+    line-height: 2;
+    list-style: none;
+    color: #ffffff;
+}
+.background-grey {
+    position: absolute;
+    height: 100%;
+    background-color: grey;
+    z-index: 1 !important;
+}
+
+/*Details section*/
+#details * {
+    z-index: 1000;
+}
+#details, #gallery-header {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background: url("../img/background-greyline.jpg") center repeat-y;
+}
+#details .details-item {
+    height: 555px;
+    background: -webkit-linear-gradient(left, rgba(255,255,255, 0) 50%, #525955 0%);
+    background: -moz-linear-gradient(left, rgba(255,255,255, 0) 50%, #525955 0%);
+    background: -ms-linear-gradient(left, rgba(255,255,255, 0) 50%, #525955 0%);
+    background: linear-gradient(left, rgba(255,255,255, 0) 50%, #525955 0%);
+}
+#details .details-item:nth-child(odd) {
+    background: -webkit-linear-gradient(left, #1bac70 50%, rgba(255,255,255, 0) 0%);
+    background: -moz-linear-gradient(left, #1bac70 50%, rgba(255,255,255, 0) 0%);
+    background: -ms-linear-gradient(left, #1bac70 50%, rgba(255,255,255, 0) 0%);
+    background: linear-gradient(left, #1bac70 50%, rgba(255,255,255, 0) 0%);
+}
+.img-shadow {
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/*Gallery section*/
+#gallery-body {
+    height: 700px;
+    background-image: url("../img/gallery/gallery-background.jpg");
+    background-size: cover;
+}
+
+/*Footer section*/
+footer {
+    font-size: 16pt;
+    color: #8c8d8d;
+}
+#greyline {
+    border-top: solid 1px #bebfbf;
+    margin: 50px auto 30px auto;
+    padding-top: 30px;
+}
+#footer-line {
+    background: #252b29;
+    padding-top: 25px;
+    height: 90px;
+    font-weight: 600;
+}
+#footer-line p {
+    margin-top: 5px;
+}
+#footer-line input {
+    height: 40px;
+    width: 100%;
+}
+#footer-line input[type="submit"] {
+    background-color: #fb8c00;
+    border: none;
+    font-size: 15pt;
+    color: white;
+}
+
+
+
+/*
+Text, buttons, colors
+*/
+* {
+    font-family: 'Raleway', sans-serif;
+}
+main p {
+    font-size: 15pt;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+#nav {
+    padding-bottom: 15px;
+    border-bottom: solid 1px #8c8d8d;
+}
+nav li {
+    padding-top: 40px;
+}
+nav li.selected {
+    border-top: solid #2ee89b 3px;
+}
+nav li a {
+    padding: 10px;
+    font-size: 14pt;
+    color: white;
+}
+nav li a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(0,0,0,0.2);
+    font-weight: 600;
+}
+nav li a:focus {
+    color: white;
+    text-decoration: none;
+}
+
+
+h1 {
+    text-transform: capitalize;
+    font-size: 42pt;
+    color: #ffffff;
+    margin-top: 75px;
+    font-weight: 600;
+    z-index: 700;
+}
+
+.text-green {
+    color: #2ee89b;
+}
+
+.shadow-text {
+    font-size: 84pt;
+    position: absolute;
+    font-weight: 700;
+    left: 25%;
+    z-index: 0;
+    opacity: 0.1;
+    color: #ffffff;
+}
+
+.shadow-dark {
+    color: #262b28;
+}
+.header-dark {
+    color: #787878;
+}
+
+#sign-up {
+    background: #fb8c00;
+    border: none;
+    height: 50px;
+    width: 355px;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 13pt;
+    font-weight: 600;
+}
+
+/*
+Images
+*/
+#details-img-ui, #details-img-ui-fm, #details-img-ui-email {
+    margin-top: 30px;
+}
+#details-img-notification, #details-img-filemanager, #details-img-email  {
+    margin-top: 170px;
+}
+
+/*
+Other
+*/
+.square-green {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: #2ee89b;
+}
+.animate-line {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    background-color: #8c8d8d;
+    margin-left: 5px;
+}
