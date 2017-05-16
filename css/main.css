@@ -41,7 +41,7 @@ nav img.logo {
 #details * {
     z-index: 1000;
 }
-#details, #gallery-header {
+#details, #gallery-header-wrapper {
     overflow: hidden;
     position: relative;
     width: 100%;

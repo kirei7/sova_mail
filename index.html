@@ -21,7 +21,7 @@
     <![endif]-->
 </head>
 <body>
-<main class="scrollme">
+<main class="">
     <nav>
         <div class="container">
             <div class="col-xs-10">
@@ -35,24 +35,7 @@
             </div>
         </div>
     </nav>
-    <div class="container">
-        <div class="animateme animate-line"
-             data-when="enter"
-             data-from="0"
-             data-to="1"
-             data-opacity="1"
-             data-scaley="56"
-             data-translatey="28"
-             data-easing="easeinout"
-             style="top: 200px;"></div>
-        <div class="animateme square-green"
-             data-when="enter"
-             data-from="0"
-             data-to="1"
-             data-opacity="1"
-             data-translatey="56"
-             data-easing="easeinout"
-             style="top: 200px;"></div>
+    <div id="main" class="container">
         <div id="main-text" class="row">
             <div class="col-sm-90">
                 <h1><span class="text-green">SOVA</span> MAIL</h1>
@@ -74,7 +57,7 @@
     </div>
 </main>
 <section id="features">
-    <div class="container">
+    <div class="container scrollme">
         <div class="row">
             <span class="shadow-text">FEATURES</span>
             <div class="col-xs-100 text-center">
@@ -83,7 +66,7 @@
                 </h1>
             </div>
             <div class="col-sm-35">
-                <ul>
+                <ul id="features-list">
                     <li>IMAP/POP3 Support</li>
                     <li>Multiple Email Accounts</li>
                     <li>Built-in Reminders</li>
@@ -106,7 +89,7 @@
     <div class="container">
         <div class="row">
             <span class="shadow-text shadow-dark">DETAILS</span>
-            <div class="col-xs-100 text-center">
+            <div id="details-header" class="col-xs-100 text-center">
                 <h1 class="header-dark">
                     DETAILS
                 </h1>
@@ -120,6 +103,7 @@
                     <img id="details-img-ui" class="img-responsive img-shadow" src="img/details/ui.jpg">
                 </div>
                 <div class="col-sm-offset-3 col-sm-40">
+                    <p>Built-in <span class="text-green">Reminders</span></p>
                     <img id="details-img-notification" class="img-responsive" src="img/details/notification.png">
                 </div>
             </div>
@@ -151,11 +135,11 @@
     </div>
 </section>
 <section id="gallery">
-    <div id="gallery-header">
+    <div id="gallery-header-wrapper">
         <div class="container">
             <div class="row">
                 <span class="shadow-text shadow-dark">GALLERY</span>
-                <div class="col-xs-100 text-center">
+                <div id="gallery-header" class="col-xs-100 text-center">
                     <h1 class="header-dark">
                         GALLERY
                     </h1>
@@ -193,8 +177,25 @@
 </footer>
 
 
+<div class="hidden reusable">
+    <div class="animateme scrollme animate-line col-xs-hidden"
+         data-when="enter"
+         data-from="0"
+         data-to="1"
+         data-opacity="1"
+         data-easing="easeinout"></div>
+    <div class="animateme scrollme square-green col-xs-hidden"
+         data-when="enter"
+         data-from="0"
+         data-to="1"
+         data-opacity="1"
+         data-easing="easeinout"></div>
+</div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/addanimation.js"></script>
 <script src="js/jquery.scrollme.min.js"></script>
+
 </body>
 </html>
