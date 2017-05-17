@@ -63,6 +63,14 @@ nav img.logo {
 .img-shadow {
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
+#details p {
+    font-size: 16pt;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 55px;
+}
+
 
 /*Gallery section*/
 #gallery-body {
@@ -189,9 +197,7 @@ Images
 #details-img-ui, #details-img-ui-fm, #details-img-ui-email {
     margin-top: 30px;
 }
-#details-img-notification, #details-img-filemanager, #details-img-email  {
-    margin-top: 170px;
-}
+
 
 /*
 Other

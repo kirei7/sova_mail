@@ -62,18 +62,29 @@ AnimCreator.prototype.getAnimations = function () {
     );
     animations.push(
         this.createDoubleLinedFigure(
-            $(".details-anim-right"),
-            90,
-            200,
-            "right"
+            $("#reminders"),
+            113,
+            130,
+            "right",
+            135
         )
     );
     animations.push(
         this.createDoubleLinedFigure(
-            $(".details-anim-left"),
-            90,
-            200,
-            "left"
+            $("#filemanager"),
+            113,
+            340,
+            "left",
+            110
+        )
+    );
+    animations.push(
+        this.createDoubleLinedFigure(
+            $("#emailaccounts"),
+            113,
+            100,
+            "right",
+            110
         )
     );
 
@@ -123,7 +134,7 @@ AnimCreator.prototype.createPlainAnimation = function (target, distance, sideLen
 
 };
 
-AnimCreator.prototype.createDoubleLinedFigure = function (target, top, left, position) {
+AnimCreator.prototype.createDoubleLinedFigure = function (target, top, left, position, hlength) {
     var square = this.blankSquare.clone();
     square.removeClass("animateme", "scrollme");
     square.css("width", 10);
@@ -131,20 +142,22 @@ AnimCreator.prototype.createDoubleLinedFigure = function (target, top, left, pos
     square.css("top", top);
     square.css("left", left);
 
-    var hlineLeft = 125;
-    if (position == "right") hlineLeft = -125;
-    var hline = this.createLine(square, "x", hlineLeft);/*this.blankLine.clone();
-    hline.removeClass("animateme", "scrollme");
-    hline.css("width", 125);
-    hline.css("top", top);
-    hline.css("left", left);*/
+    var hlineDist = hlength;
+    var mleft;
+    var mtop = 25;
+    if (position == "right") {
+        hlineDist = -hlength;
+        mleft = -20;
+    } else mleft = 20;
+    var hline = this.createLine(square, "x", hlineDist);
+    var vline = this.createLine(square, "y", 40);
 
-
-    var vline = this.createLine(square, "y", 45);/*this.blankLine.clone();
-    vline.removeClass("animateme", "scrollme");
-    vline.css("width", 45);
-    vline.css("top", top);
-    vline.css("left", left);*/
+    mleft += parseFloat(hline.css("left"));
+    hline.css("left", mleft);
+    mtop += parseFloat(vline.css("top"));
+    vline.css("top", mtop);
+    var centeringCorrection = parseFloat(vline.css("left"));
+    vline.css("left", centeringCorrection + 1);
 
     return new Animation([hline,vline], square, target);
 };
